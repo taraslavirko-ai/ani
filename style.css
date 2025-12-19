@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 50px;
+}
+
+.marquee-text {
+  font-size: 24px;
+  color: blue;
+  font-weight: bold;
+}
+
+/* CSS анімація */
+.container {
+  overflow: hidden;
+  white-space: nowrap;
+  border: 2px solid #333;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.animated-text {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4500;
+  position: relative;
+  animation: moveText 5s linear infinite;
+}
+
+@keyframes moveText {
+  0% { left: 100%; }
+  100% { left: -100%; }
+}
